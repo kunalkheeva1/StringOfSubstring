@@ -18,7 +18,7 @@ public class StringOfSubstring {
 
             }
             if(j== str2.length){
-                j=0;
+
                 return true;
             }
 
@@ -26,6 +26,6 @@ public class StringOfSubstring {
     }
     public static void main(String[] args) {
 
-        System.out.println(stringOfSubstring("Kunal kheeva the great", "gre"));
+        System.out.println(stringOfSubstring("Kunal kheeva the great", "khe"));
     }
 }
