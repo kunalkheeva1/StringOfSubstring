@@ -12,16 +12,20 @@ public class StringOfSubstring {
         for(int i=0; i<n; i++){
             if(str1[i] == str2[j]){
                 j++;
-                k++;
+
             } else{
                 j=0;
-                k=0;
+
+            }
+            if(j== str2.length){
+                j=0;
+                return true;
             }
 
-        }return k== m;
+        }return false;
     }
     public static void main(String[] args) {
 
-        System.out.println(stringOfSubstring("Kunal kheeva the great", "khe"));
+        System.out.println(stringOfSubstring("Kunal kheeva the great", "gre"));
     }
 }
